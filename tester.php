@@ -1,18 +1,18 @@
 <?php
 
-$test = 7.7; 							//variable placeholder
+$test = 7.7; 						//variable placeholder
 
-if(gettype($test) == "string") 			//validate string
+if(gettype($test) == "string") 				//validate string
 	echo $test;
-else if (gettype($test) == "boolean") { //validate boolean
+else if (gettype($test) == "boolean") { 		//validate boolean
 	if ($test == true)
 		echo "yes!";
 	else
 		echo "no!";
 }
-else if (gettype($test) == "integer") 	//validate integer
+else if (gettype($test) == "integer") 			//validate integer
 	echo $test + 5;	
-else if (gettype($test) == "double") 	//validate float
+else if (gettype($test) == "double") 			//validate float
 	echo $test * 7;
 else
 	echo "Unknown Type!";				//unknown type	
