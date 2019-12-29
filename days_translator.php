@@ -13,4 +13,3 @@ for($i=0;$i<count($ar_array);$i++){ 								//itrate over arabic array
 return print("Unidentified input!"); 								//error of invalid input
  
 ?>
-
