@@ -1,11 +1,16 @@
 <?php
 
 $films=array("Fast","Predestination","Persuit","Prestige");		//movies array
-$keyword="avatar";	          //seach keyword
-
-foreach($films as $value)	    //iterate over the array
-	if($keyword == $value)	    //validate keyword
-		return print("Yes!");     //successful exit
-	else
-		return print("No!");      //failed exit
+$keyword="Fast";	//seach keyword
+$flag = 0;
+foreach($films as $value) {	//iterate over the array
+	if($keyword == $value){	//validate keyword
+		echo "Yes!"; //successful exit
+		$flag = 1; //flag that movie is found
+		break;
+	}
+}
+if($flag == 0){ // if movie not found print No
+	echo "No!";
+}
 ?>
