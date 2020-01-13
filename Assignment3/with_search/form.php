@@ -23,7 +23,7 @@ if (!isset($_SESSION['username'])) {	// redirect user to login page in unsuccess
 
 <?php
 
-echo "You've searched for '".$_SESSION['search']."', its price is ".$_SESSION['price']."LE";
+echo "You've searched for '".$_SESSION['search']."', its price is ".$_SESSION['price']."LE"; //display searched item and its price
 
 
 ?>
