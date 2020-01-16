@@ -5,8 +5,9 @@ if (!isset($_SESSION['username'])) {	// redirect user to login page in unsuccess
 	header('Location: login.php');
 	exit();
 }
+
 else{
-	$list = array("tshirt"=>200 , "shirt"=>80 , "pantalon"=>220 , "shoes"=>120 , "short"=>90 , "jacket"=>60 , "glasses"=>80 , "sunglasses"=>100);
+	$list = $_SESSION['list'];
 	foreach($list as $key => $value)
 		echo "item: $key, price: $value <br/>";
 	echo "-----ascending order according to the key----<br/>";

@@ -28,6 +28,9 @@ else { //successful login inputs
 	$_SESSION['email']=$email;
 	$_SESSION['password']=$password;
 	
+	$list = array("tshirt"=>200 , "shirt"=>80 , "pantalon"=>220 , "shoes"=>120 , "short"=>90 , "jacket"=>60 , "glasses"=>80 , "sunglasses"=>100);
+	$_SESSION['list'] = $list;
+	
 	echo "<br/>"."<a href='form.php'>Go to Shop!</a>"."<br/>"."<a href='search_items.php'>Go to Search!</a>"."<br/>"."<a href='sorted_arrays.php'>Go to Sort!</a>";	//welcom message
 }
 ?>
